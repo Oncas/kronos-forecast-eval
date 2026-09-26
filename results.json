@@ -1,0 +1,1016 @@
+{
+  "small": {
+    "model": "small",
+    "meta": "model=small lookback=400 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 153,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 153,
+        "close_mae_kronos_mean": 1727.7188548474942,
+        "close_mae_kronos_median": 1710.916194852941,
+        "close_mae_random_walk": 1509.1410457516342,
+        "close_mae_ratio_vs_rw": 1.1448359049746715,
+        "close_mape_kronos": 0.017366957835965376,
+        "close_mape_random_walk": 0.015154480563371885,
+        "direction_hits": 83,
+        "direction_n": 153,
+        "direction_accuracy": 0.5424836601307189,
+        "direction_independent_n": 153,
+        "direction_accuracy_independent": 0.5424836601307189,
+        "direction_p_value_vs_coinflip": 0.33199325143986175,
+        "direction_accuracy_open_to_close_signal": 0.5424836601307189,
+        "direction_p_value_open_to_close_signal": 0.33199325143986175,
+        "tokenizer_open_bias_mean_pct": -0.07085783111089222,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.031072032407816502,
+        "actual_up_fraction": 0.49019607843137253,
+        "predicted_up_fraction": 0.5947712418300654,
+        "brier_kronos_p_up": 0.2805664488017429,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": 0.06474844774024177,
+        "ret_corr_spearman": 0.067434629354134,
+        "ret_corr_pearson_median_forecast": 0.0651739776117834,
+        "mean_pred_return": 0.0023972597974743076,
+        "mean_actual_return": -0.0018688269101180149,
+        "range_mae_kronos": 1692.9292153458605,
+        "range_mae_trailing20": 1363.4051372549022,
+        "range_corr_kronos": 0.18729113322175406,
+        "range_corr_trailing20": 0.20996373331839102,
+        "crps_kronos": 1248.184811894298,
+        "crps_random_walk_gauss": 1116.9496999564365,
+        "coverage80_kronos": 0.6209150326797386,
+        "coverage90_kronos": 0.7189542483660131,
+        "width80_kronos_pct": 0.037888765072349985,
+        "coverage80_random_walk": 0.8431372549019608,
+        "width80_random_walk_pct": 0.04974171251069332,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": -0.27329592823891746,
+            "max_drawdown": -0.3683458028627641,
+            "sharpe_ann": -1.7616259220356743
+          },
+          "kronos_long_flat": {
+            "total_return": -0.13744443470955592,
+            "max_drawdown": -0.269731781967267,
+            "sharpe_ann": -0.9304493650121656
+          },
+          "kronos_long_short": {
+            "total_return": 0.0032298785535997965,
+            "max_drawdown": -0.28579589730858823,
+            "sharpe_ann": 0.2149361149456858
+          },
+          "trades_long_flat": 40
+        }
+      }
+    }
+  },
+  "mini": {
+    "model": "mini",
+    "meta": "model=mini lookback=400 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 153,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 153,
+        "close_mae_kronos_mean": 1714.232443831699,
+        "close_mae_kronos_median": 1735.7555126633983,
+        "close_mae_random_walk": 1509.1410457516342,
+        "close_mae_ratio_vs_rw": 1.1358994234882254,
+        "close_mape_kronos": 0.01722663512605649,
+        "close_mape_random_walk": 0.015154480563371885,
+        "direction_hits": 79,
+        "direction_n": 153,
+        "direction_accuracy": 0.5163398692810458,
+        "direction_independent_n": 153,
+        "direction_accuracy_independent": 0.5163398692810458,
+        "direction_p_value_vs_coinflip": 0.7465275303369412,
+        "direction_accuracy_open_to_close_signal": 0.5032679738562091,
+        "direction_p_value_open_to_close_signal": 1.0,
+        "tokenizer_open_bias_mean_pct": 0.21221591806423948,
+        "tokenizer_open_bias_corr_with_actual_ret": -0.0627648580413467,
+        "actual_up_fraction": 0.49019607843137253,
+        "predicted_up_fraction": 0.5555555555555556,
+        "brier_kronos_p_up": 0.3040305010893246,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": -0.07487997044406697,
+        "ret_corr_spearman": -0.04333360138313698,
+        "ret_corr_pearson_median_forecast": -0.0882042171233382,
+        "mean_pred_return": 0.002776789014423201,
+        "mean_actual_return": -0.0018688269101180149,
+        "range_mae_kronos": 1520.3750493600214,
+        "range_mae_trailing20": 1363.4051372549022,
+        "range_corr_kronos": 0.2655642049973057,
+        "range_corr_trailing20": 0.20996373331839102,
+        "crps_kronos": 1293.8205196454062,
+        "crps_random_walk_gauss": 1116.9496999564365,
+        "coverage80_kronos": 0.6470588235294118,
+        "coverage90_kronos": 0.7320261437908496,
+        "width80_kronos_pct": 0.040302058430602375,
+        "coverage80_random_walk": 0.8431372549019608,
+        "width80_random_walk_pct": 0.04974171251069332,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": -0.27329592823891746,
+            "max_drawdown": -0.3683458028627641,
+            "sharpe_ann": -1.7616259220356743
+          },
+          "kronos_long_flat": {
+            "total_return": -0.2529804787265939,
+            "max_drawdown": -0.31055396453287376,
+            "sharpe_ann": -2.1707994462080955
+          },
+          "kronos_long_short": {
+            "total_return": -0.2520318942067711,
+            "max_drawdown": -0.3094769020513496,
+            "sharpe_ann": -1.5701281625489796
+          },
+          "trades_long_flat": 57
+        }
+      }
+    }
+  },
+  "base": {
+    "model": "base",
+    "meta": "model=base lookback=400 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 153,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 153,
+        "close_mae_kronos_mean": 2642.7140131399783,
+        "close_mae_kronos_median": 2548.7496119281045,
+        "close_mae_random_walk": 1509.1410457516342,
+        "close_mae_ratio_vs_rw": 1.7511378545957996,
+        "close_mape_kronos": 0.02687594651235384,
+        "close_mape_random_walk": 0.015154480563371885,
+        "direction_hits": 73,
+        "direction_n": 153,
+        "direction_accuracy": 0.477124183006536,
+        "direction_independent_n": 153,
+        "direction_accuracy_independent": 0.477124183006536,
+        "direction_p_value_vs_coinflip": 0.6277709072003739,
+        "direction_accuracy_open_to_close_signal": 0.49019607843137253,
+        "direction_p_value_open_to_close_signal": 0.8716178400407913,
+        "tokenizer_open_bias_mean_pct": -0.18673298061016408,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.008145034994382136,
+        "actual_up_fraction": 0.49019607843137253,
+        "predicted_up_fraction": 0.6209150326797386,
+        "brier_kronos_p_up": 0.40716775599128535,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": -0.02724719718936699,
+        "ret_corr_spearman": -0.02403066489753796,
+        "ret_corr_pearson_median_forecast": -0.011613760956501537,
+        "mean_pred_return": 0.007334829038320944,
+        "mean_actual_return": -0.0018688269101180149,
+        "range_mae_kronos": 2260.2150483387804,
+        "range_mae_trailing20": 1363.4051372549022,
+        "range_corr_kronos": 0.2612621165771932,
+        "range_corr_trailing20": 0.20996373331839102,
+        "crps_kronos": 1887.4936907773645,
+        "crps_random_walk_gauss": 1116.9496999564365,
+        "coverage80_kronos": 0.43790849673202614,
+        "coverage90_kronos": 0.5620915032679739,
+        "width80_kronos_pct": 0.04547777320616315,
+        "coverage80_random_walk": 0.8431372549019608,
+        "width80_random_walk_pct": 0.04974171251069332,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": -0.27329592823891746,
+            "max_drawdown": -0.3683458028627641,
+            "sharpe_ann": -1.7616259220356743
+          },
+          "kronos_long_flat": {
+            "total_return": -0.23294425209475356,
+            "max_drawdown": -0.2732921010786241,
+            "sharpe_ann": -1.792778662908918
+          },
+          "kronos_long_short": {
+            "total_return": -0.20614563899706317,
+            "max_drawdown": -0.2836244860214543,
+            "sharpe_ann": -1.2176328099934255
+          },
+          "trades_long_flat": 13
+        }
+      }
+    }
+  },
+  "small_ext": {
+    "model": "small_ext",
+    "meta": "model=small lookback=400 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 427,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 427,
+        "close_mae_kronos_mean": 3146.331927449259,
+        "close_mae_kronos_median": 3023.052426632026,
+        "close_mae_random_walk": 1487.4923653395783,
+        "close_mae_ratio_vs_rw": 2.1151919840146447,
+        "close_mape_kronos": 0.03460432230476517,
+        "close_mape_random_walk": 0.017393840629669057,
+        "direction_hits": 221,
+        "direction_n": 427,
+        "direction_accuracy": 0.5175644028103045,
+        "direction_independent_n": 427,
+        "direction_accuracy_independent": 0.5175644028103045,
+        "direction_p_value_vs_coinflip": 0.498129677853244,
+        "direction_accuracy_open_to_close_signal": 0.5292740046838408,
+        "direction_p_value_open_to_close_signal": 0.24543052709293045,
+        "tokenizer_open_bias_mean_pct": -0.9658394828828919,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.01725179327865199,
+        "actual_up_fraction": 0.5128805620608899,
+        "predicted_up_fraction": 0.40046838407494145,
+        "brier_kronos_p_up": 0.3362503252667187,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": 0.0366529857832527,
+        "ret_corr_spearman": 0.041151921487558724,
+        "ret_corr_pearson_median_forecast": 0.027301399075018384,
+        "mean_pred_return": -0.01583699663938465,
+        "mean_actual_return": 0.0015763758694970706,
+        "range_mae_kronos": 2868.331983801718,
+        "range_mae_trailing20": 1336.5630866510542,
+        "range_corr_kronos": 0.20032093835552972,
+        "range_corr_trailing20": 0.23026979577755,
+        "crps_kronos": 2178.3203418219537,
+        "crps_random_walk_gauss": 1122.402218922007,
+        "coverage80_kronos": 0.5737704918032787,
+        "coverage90_kronos": 0.6885245901639344,
+        "width80_kronos_pct": 0.06971672550552994,
+        "coverage80_random_walk": 0.8056206088992974,
+        "width80_random_walk_pct": 0.0604621776788137,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": 0.7227156481743646,
+            "max_drawdown": -0.28095276766937427,
+            "sharpe_ann": 1.2233229368265046
+          },
+          "kronos_long_flat": {
+            "total_return": 0.31777000254038024,
+            "max_drawdown": -0.19644879762269563,
+            "sharpe_ann": 0.8510114792928751
+          },
+          "kronos_long_short": {
+            "total_return": -0.10524023235172619,
+            "max_drawdown": -0.42256059479452346,
+            "sharpe_ann": 0.031648646808961144
+          },
+          "trades_long_flat": 91
+        }
+      }
+    }
+  },
+  "small_all": {
+    "model": "small_all",
+    "meta": "model=small lookback=400 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 580,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 580,
+        "close_mae_kronos_mean": 2772.1115824353446,
+        "close_mae_kronos_median": 2676.919937904095,
+        "close_mae_random_walk": 1493.2031379310347,
+        "close_mae_ratio_vs_rw": 1.856486577088467,
+        "close_mape_kronos": 0.030057224436271433,
+        "close_mape_random_walk": 0.016803112888042388,
+        "direction_hits": 304,
+        "direction_n": 580,
+        "direction_accuracy": 0.5241379310344828,
+        "direction_independent_n": 580,
+        "direction_accuracy_independent": 0.5241379310344828,
+        "direction_p_value_vs_coinflip": 0.2622218743850843,
+        "direction_accuracy_open_to_close_signal": 0.5327586206896552,
+        "direction_p_value_open_to_close_signal": 0.12438108358265154,
+        "tokenizer_open_bias_mean_pct": -0.7297494954326921,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.0030508404990067578,
+        "actual_up_fraction": 0.506896551724138,
+        "predicted_up_fraction": 0.4517241379310345,
+        "brier_kronos_p_up": 0.3215613026819924,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": 0.021602957947473092,
+        "ret_corr_spearman": 0.035366376811772474,
+        "ret_corr_pearson_median_forecast": 0.013939719631709459,
+        "mean_pred_return": -0.011026925544833924,
+        "mean_actual_return": 0.0006675551362537808,
+        "range_mae_kronos": 2558.268839709052,
+        "range_mae_trailing20": 1343.6438344827588,
+        "range_corr_kronos": 0.16787110185944187,
+        "range_corr_trailing20": 0.22440030970078256,
+        "crps_kronos": 1932.9570037548306,
+        "crps_random_walk_gauss": 1120.9638820224686,
+        "coverage80_kronos": 0.5862068965517241,
+        "coverage90_kronos": 0.696551724137931,
+        "width80_kronos_pct": 0.06132072904643247,
+        "coverage80_random_walk": 0.8155172413793104,
+        "width80_random_walk_pct": 0.05763419290170607,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": 0.25314625294345583,
+            "max_drawdown": -0.3683458028627644,
+            "sharpe_ann": 0.5393157623479847
+          },
+          "kronos_long_flat": {
+            "total_return": 0.1377773041428747,
+            "max_drawdown": -0.2697317819672672,
+            "sharpe_ann": 0.4073755633825411
+          },
+          "kronos_long_short": {
+            "total_return": -0.10145987896288966,
+            "max_drawdown": -0.4590506019091829,
+            "sharpe_ann": 0.07498546419836348
+          },
+          "trades_long_flat": 130
+        }
+      }
+    }
+  },
+  "mini_lb40": {
+    "model": "mini_lb40",
+    "meta": "model=mini lookback=40 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 153,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 153,
+        "close_mae_kronos_mean": 1717.9556505310454,
+        "close_mae_kronos_median": 1723.3592044526142,
+        "close_mae_random_walk": 1509.1410457516342,
+        "close_mae_ratio_vs_rw": 1.1383665266856553,
+        "close_mape_kronos": 0.017195228507960708,
+        "close_mape_random_walk": 0.015154480563371885,
+        "direction_hits": 76,
+        "direction_n": 153,
+        "direction_accuracy": 0.49673202614379086,
+        "direction_independent_n": 153,
+        "direction_accuracy_independent": 0.49673202614379086,
+        "direction_p_value_vs_coinflip": 1.0,
+        "direction_accuracy_open_to_close_signal": 0.4117647058823529,
+        "direction_p_value_open_to_close_signal": 0.035211020179808296,
+        "tokenizer_open_bias_mean_pct": 0.1972590359041181,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.08468746572875821,
+        "actual_up_fraction": 0.49019607843137253,
+        "predicted_up_fraction": 0.5620915032679739,
+        "brier_kronos_p_up": 0.3019825708061002,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": -0.05799795394732126,
+        "ret_corr_spearman": -0.1071026496723091,
+        "ret_corr_pearson_median_forecast": -0.07367157864785173,
+        "mean_pred_return": 0.0019707271630457304,
+        "mean_actual_return": -0.0018688269101180149,
+        "range_mae_kronos": 1429.0184375000003,
+        "range_mae_trailing20": 1363.4051372549022,
+        "range_corr_kronos": 0.20850171273083049,
+        "range_corr_trailing20": 0.20996373331839102,
+        "crps_kronos": 1290.2565170770417,
+        "crps_random_walk_gauss": 1116.9496999564365,
+        "coverage80_kronos": 0.5686274509803921,
+        "coverage90_kronos": 0.6274509803921569,
+        "width80_kronos_pct": 0.030251007508390573,
+        "coverage80_random_walk": 0.8431372549019608,
+        "width80_random_walk_pct": 0.04974171251069332,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": -0.27329592823891746,
+            "max_drawdown": -0.3683458028627641,
+            "sharpe_ann": -1.7616259220356743
+          },
+          "kronos_long_flat": {
+            "total_return": -0.28946391944702754,
+            "max_drawdown": -0.33977628688714523,
+            "sharpe_ann": -2.526523287613518
+          },
+          "kronos_long_short": {
+            "total_return": -0.32221095781979836,
+            "max_drawdown": -0.41412974366596655,
+            "sharpe_ann": -2.188211265467899
+          },
+          "trades_long_flat": 66
+        }
+      }
+    }
+  },
+  "small_lb40": {
+    "model": "small_lb40",
+    "meta": "model=small lookback=40 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 153,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 153,
+        "close_mae_kronos_mean": 1556.0569584014158,
+        "close_mae_kronos_median": 1564.1620588235294,
+        "close_mae_random_walk": 1509.1410457516342,
+        "close_mae_ratio_vs_rw": 1.0310878249464184,
+        "close_mape_kronos": 0.015583262244965111,
+        "close_mape_random_walk": 0.015154480563371885,
+        "direction_hits": 81,
+        "direction_n": 153,
+        "direction_accuracy": 0.5294117647058824,
+        "direction_independent_n": 153,
+        "direction_accuracy_independent": 0.5294117647058824,
+        "direction_p_value_vs_coinflip": 0.5179210307990523,
+        "direction_accuracy_open_to_close_signal": 0.5098039215686274,
+        "direction_p_value_open_to_close_signal": 0.8716178400407913,
+        "tokenizer_open_bias_mean_pct": -0.0906402873143625,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.07730728850073451,
+        "actual_up_fraction": 0.49019607843137253,
+        "predicted_up_fraction": 0.35947712418300654,
+        "brier_kronos_p_up": 0.2721859114015977,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": 0.016834161323768398,
+        "ret_corr_spearman": 0.025592055003819707,
+        "ret_corr_pearson_median_forecast": 0.025360789320915237,
+        "mean_pred_return": -0.0018868584492112302,
+        "mean_actual_return": -0.0018688269101180149,
+        "range_mae_kronos": 1396.1351828022869,
+        "range_mae_trailing20": 1363.4051372549022,
+        "range_corr_kronos": 0.22784790100783966,
+        "range_corr_trailing20": 0.20996373331839102,
+        "crps_kronos": 1175.9512265466533,
+        "crps_random_walk_gauss": 1116.9496999564365,
+        "coverage80_kronos": 0.5555555555555556,
+        "coverage90_kronos": 0.6666666666666666,
+        "width80_kronos_pct": 0.028200405374859325,
+        "coverage80_random_walk": 0.8431372549019608,
+        "width80_random_walk_pct": 0.04974171251069332,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": -0.27329592823891746,
+            "max_drawdown": -0.3683458028627641,
+            "sharpe_ann": -1.7616259220356743
+          },
+          "kronos_long_flat": {
+            "total_return": -0.16451176102767606,
+            "max_drawdown": -0.25954332335622154,
+            "sharpe_ann": -1.4710664833070277
+          },
+          "kronos_long_short": {
+            "total_return": -0.07135453596640584,
+            "max_drawdown": -0.31561548941759987,
+            "sharpe_ann": -0.25822502246305945
+          },
+          "trades_long_flat": 70
+        }
+      }
+    }
+  },
+  "base_lb40": {
+    "model": "base_lb40",
+    "meta": "model=base lookback=40 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 153,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 153,
+        "close_mae_kronos_mean": 1615.8653935185184,
+        "close_mae_kronos_median": 1624.3393607026144,
+        "close_mae_random_walk": 1509.1410457516342,
+        "close_mae_ratio_vs_rw": 1.0707186038490721,
+        "close_mape_kronos": 0.01616527069237768,
+        "close_mape_random_walk": 0.015154480563371885,
+        "direction_hits": 77,
+        "direction_n": 153,
+        "direction_accuracy": 0.5032679738562091,
+        "direction_independent_n": 153,
+        "direction_accuracy_independent": 0.5032679738562091,
+        "direction_p_value_vs_coinflip": 1.0,
+        "direction_accuracy_open_to_close_signal": 0.5294117647058824,
+        "direction_p_value_open_to_close_signal": 0.5179210307990523,
+        "tokenizer_open_bias_mean_pct": -0.1193188842710058,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.06535749431909928,
+        "actual_up_fraction": 0.49019607843137253,
+        "predicted_up_fraction": 0.37254901960784315,
+        "brier_kronos_p_up": 0.2938634713144517,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": -0.04414514290806242,
+        "ret_corr_spearman": -0.02663074799297709,
+        "ret_corr_pearson_median_forecast": -0.03599692433045952,
+        "mean_pred_return": -0.0015232295506100082,
+        "mean_actual_return": -0.0018688269101180149,
+        "range_mae_kronos": 1428.6012193627453,
+        "range_mae_trailing20": 1363.4051372549022,
+        "range_corr_kronos": 0.22038549081732764,
+        "range_corr_trailing20": 0.20996373331839102,
+        "crps_kronos": 1225.6614215827137,
+        "crps_random_walk_gauss": 1116.9496999564365,
+        "coverage80_kronos": 0.5294117647058824,
+        "coverage90_kronos": 0.6078431372549019,
+        "width80_kronos_pct": 0.02825593013573701,
+        "coverage80_random_walk": 0.8431372549019608,
+        "width80_random_walk_pct": 0.04974171251069332,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": -0.27329592823891746,
+            "max_drawdown": -0.3683458028627641,
+            "sharpe_ann": -1.7616259220356743
+          },
+          "kronos_long_flat": {
+            "total_return": -0.2840614960039579,
+            "max_drawdown": -0.31549215719771306,
+            "sharpe_ann": -2.4807968700454293
+          },
+          "kronos_long_short": {
+            "total_return": -0.3122534811837614,
+            "max_drawdown": -0.42129157682108453,
+            "sharpe_ann": -2.090521975340552
+          },
+          "trades_long_flat": 71
+        }
+      }
+    }
+  },
+  "mini_all_lb40": {
+    "model": "mini_all_lb40",
+    "meta": "model=mini lookback=40 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 580,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 580,
+        "close_mae_kronos_mean": 1659.3623129040948,
+        "close_mae_kronos_median": 1656.6267176724136,
+        "close_mae_random_walk": 1493.2031379310347,
+        "close_mae_ratio_vs_rw": 1.1112770062908441,
+        "close_mape_kronos": 0.01863002062696811,
+        "close_mape_random_walk": 0.016803112888042388,
+        "direction_hits": 286,
+        "direction_n": 580,
+        "direction_accuracy": 0.49310344827586206,
+        "direction_independent_n": 580,
+        "direction_accuracy_independent": 0.49310344827586206,
+        "direction_p_value_vs_coinflip": 0.7713413178144655,
+        "direction_accuracy_open_to_close_signal": 0.45689655172413796,
+        "direction_p_value_open_to_close_signal": 0.04179717456862935,
+        "tokenizer_open_bias_mean_pct": 0.008633540058724272,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.03798204577883519,
+        "actual_up_fraction": 0.506896551724138,
+        "predicted_up_fraction": 0.5655172413793104,
+        "brier_kronos_p_up": 0.29501724137931035,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": -0.01580334117923782,
+        "ret_corr_spearman": -0.050006073452799435,
+        "ret_corr_pearson_median_forecast": -0.003984667920854191,
+        "mean_pred_return": 0.0014632564361912136,
+        "mean_actual_return": 0.0006675551362537808,
+        "range_mae_kronos": 1387.6597436242816,
+        "range_mae_trailing20": 1343.6438344827588,
+        "range_corr_kronos": 0.31033110322567875,
+        "range_corr_trailing20": 0.22440030970078256,
+        "crps_kronos": 1242.8257013655618,
+        "crps_random_walk_gauss": 1120.9638820224686,
+        "coverage80_kronos": 0.5517241379310345,
+        "coverage90_kronos": 0.6413793103448275,
+        "width80_kronos_pct": 0.03441306038802973,
+        "coverage80_random_walk": 0.8155172413793104,
+        "width80_random_walk_pct": 0.05763419290170607,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": 0.25314625294345583,
+            "max_drawdown": -0.3683458028627644,
+            "sharpe_ann": 0.5393157623479847
+          },
+          "kronos_long_flat": {
+            "total_return": -0.1890976805854997,
+            "max_drawdown": -0.345125093105211,
+            "sharpe_ann": -0.20038593386426573
+          },
+          "kronos_long_short": {
+            "total_return": -0.5386131944597325,
+            "max_drawdown": -0.6171491382108055,
+            "sharpe_ann": -0.8554120924440454
+          },
+          "trades_long_flat": 226
+        }
+      }
+    }
+  },
+  "small_all_lb40": {
+    "model": "small_all_lb40",
+    "meta": "model=small lookback=40 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 580,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 580,
+        "close_mae_kronos_mean": 1591.7607267420979,
+        "close_mae_kronos_median": 1601.5766309267242,
+        "close_mae_random_walk": 1493.2031379310347,
+        "close_mae_ratio_vs_rw": 1.0660041398972837,
+        "close_mape_kronos": 0.01784422459842027,
+        "close_mape_random_walk": 0.016803112888042388,
+        "direction_hits": 298,
+        "direction_n": 580,
+        "direction_accuracy": 0.5137931034482759,
+        "direction_independent_n": 580,
+        "direction_accuracy_independent": 0.5137931034482759,
+        "direction_p_value_vs_coinflip": 0.5334250936648102,
+        "direction_accuracy_open_to_close_signal": 0.4879310344827586,
+        "direction_p_value_open_to_close_signal": 0.589376029552569,
+        "tokenizer_open_bias_mean_pct": -0.22808638762888048,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.09164065006849856,
+        "actual_up_fraction": 0.506896551724138,
+        "predicted_up_fraction": 0.4586206896551724,
+        "brier_kronos_p_up": 0.28322988505747126,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": 0.08145962893506084,
+        "ret_corr_spearman": 0.059422785196274,
+        "ret_corr_pearson_median_forecast": 0.07693622282642755,
+        "mean_pred_return": -0.0005726282903182029,
+        "mean_actual_return": 0.0006675551362537808,
+        "range_mae_kronos": 1367.149957435345,
+        "range_mae_trailing20": 1343.6438344827588,
+        "range_corr_kronos": 0.3049025953159512,
+        "range_corr_trailing20": 0.22440030970078256,
+        "crps_kronos": 1196.639468292955,
+        "crps_random_walk_gauss": 1120.9638820224686,
+        "coverage80_kronos": 0.5586206896551724,
+        "coverage90_kronos": 0.653448275862069,
+        "width80_kronos_pct": 0.03277304134500929,
+        "coverage80_random_walk": 0.8155172413793104,
+        "width80_random_walk_pct": 0.05763419290170607,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": 0.25314625294345583,
+            "max_drawdown": -0.3683458028627644,
+            "sharpe_ann": 0.5393157623479847
+          },
+          "kronos_long_flat": {
+            "total_return": 0.20513476753567783,
+            "max_drawdown": -0.28429379317425374,
+            "sharpe_ann": 0.529328124643225
+          },
+          "kronos_long_short": {
+            "total_return": -0.019824507669669922,
+            "max_drawdown": -0.5180309955153222,
+            "sharpe_ann": 0.19679216233068156
+          },
+          "trades_long_flat": 244
+        }
+      }
+    }
+  },
+  "base_all_lb40": {
+    "model": "base_all_lb40",
+    "meta": "model=base lookback=40 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 580,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 580,
+        "close_mae_kronos_mean": 1608.1909017600574,
+        "close_mae_kronos_median": 1612.8933199084054,
+        "close_mae_random_walk": 1493.2031379310347,
+        "close_mae_ratio_vs_rw": 1.077007448556764,
+        "close_mape_kronos": 0.018011561662446884,
+        "close_mape_random_walk": 0.016803112888042388,
+        "direction_hits": 288,
+        "direction_n": 580,
+        "direction_accuracy": 0.496551724137931,
+        "direction_independent_n": 580,
+        "direction_accuracy_independent": 0.496551724137931,
+        "direction_p_value_vs_coinflip": 0.9008793742874884,
+        "direction_accuracy_open_to_close_signal": 0.4896551724137931,
+        "direction_p_value_open_to_close_signal": 0.6478880998295341,
+        "tokenizer_open_bias_mean_pct": -0.29560510116294986,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.10918197287943197,
+        "actual_up_fraction": 0.506896551724138,
+        "predicted_up_fraction": 0.40344827586206894,
+        "brier_kronos_p_up": 0.2942068965517241,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": 0.08070219178604461,
+        "ret_corr_spearman": 0.03765811350253102,
+        "ret_corr_pearson_median_forecast": 0.07481077948155263,
+        "mean_pred_return": -0.0017018352578790836,
+        "mean_actual_return": 0.0006675551362537808,
+        "range_mae_kronos": 1359.2818299658766,
+        "range_mae_trailing20": 1343.6438344827588,
+        "range_corr_kronos": 0.3110046410203997,
+        "range_corr_trailing20": 0.22440030970078256,
+        "crps_kronos": 1216.3595354959375,
+        "crps_random_walk_gauss": 1120.9638820224686,
+        "coverage80_kronos": 0.5189655172413793,
+        "coverage90_kronos": 0.6068965517241379,
+        "width80_kronos_pct": 0.030880462846719314,
+        "coverage80_random_walk": 0.8155172413793104,
+        "width80_random_walk_pct": 0.05763419290170607,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": 0.25314625294345583,
+            "max_drawdown": -0.3683458028627644,
+            "sharpe_ann": 0.5393157623479847
+          },
+          "kronos_long_flat": {
+            "total_return": -0.06671140898564631,
+            "max_drawdown": -0.3367648308367691,
+            "sharpe_ann": 0.006691639353007406
+          },
+          "kronos_long_short": {
+            "total_return": -0.4194883929998916,
+            "max_drawdown": -0.5698501904966315,
+            "sharpe_ann": -0.5326483389214063
+          },
+          "trades_long_flat": 225
+        }
+      }
+    }
+  },
+  "small_lb40_topp1": {
+    "model": "small_lb40_topp1",
+    "meta": "model=small lookback=40 pred_len=1 samples=30 T=1.0 top_p=1.0 seed=0",
+    "n_origins": 153,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 153,
+        "close_mae_kronos_mean": 1572.9571347358399,
+        "close_mae_kronos_median": 1575.1487469362746,
+        "close_mae_random_walk": 1509.1410457516342,
+        "close_mae_ratio_vs_rw": 1.0422863649251695,
+        "close_mape_kronos": 0.015779365443084968,
+        "close_mape_random_walk": 0.015154480563371885,
+        "direction_hits": 86,
+        "direction_n": 153,
+        "direction_accuracy": 0.5620915032679739,
+        "direction_independent_n": 153,
+        "direction_accuracy_independent": 0.5620915032679739,
+        "direction_p_value_vs_coinflip": 0.14536554974727312,
+        "direction_accuracy_open_to_close_signal": 0.47058823529411764,
+        "direction_p_value_open_to_close_signal": 0.5179210307990523,
+        "tokenizer_open_bias_mean_pct": -0.13548282006743698,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.06297681892094474,
+        "actual_up_fraction": 0.49019607843137253,
+        "predicted_up_fraction": 0.35294117647058826,
+        "brier_kronos_p_up": 0.2693827160493827,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": -0.00992737332323007,
+        "ret_corr_spearman": -0.01069853778832107,
+        "ret_corr_pearson_median_forecast": 0.004714274464507642,
+        "mean_pred_return": -0.0016764250483291172,
+        "mean_actual_return": -0.0018688269101180149,
+        "range_mae_kronos": 1480.3163837826798,
+        "range_mae_trailing20": 1363.4051372549022,
+        "range_corr_kronos": 0.22188481304301455,
+        "range_corr_trailing20": 0.20996373331839102,
+        "crps_kronos": 1166.223044620051,
+        "crps_random_walk_gauss": 1116.9496999564365,
+        "coverage80_kronos": 0.6143790849673203,
+        "coverage90_kronos": 0.7124183006535948,
+        "width80_kronos_pct": 0.03189342166383906,
+        "coverage80_random_walk": 0.8431372549019608,
+        "width80_random_walk_pct": 0.04974171251069332,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": -0.27329592823891746,
+            "max_drawdown": -0.3683458028627641,
+            "sharpe_ann": -1.7616259220356743
+          },
+          "kronos_long_flat": {
+            "total_return": -0.14633371347710744,
+            "max_drawdown": -0.23203263266763685,
+            "sharpe_ann": -1.2508511377172196
+          },
+          "kronos_long_short": {
+            "total_return": -0.029511133186382987,
+            "max_drawdown": -0.25391284295410255,
+            "sharpe_ann": 0.01183303818634405
+          },
+          "trades_long_flat": 68
+        }
+      }
+    }
+  },
+  "small_lb90": {
+    "model": "small_lb90",
+    "meta": "model=small lookback=90 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 153,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 153,
+        "close_mae_kronos_mean": 1650.633248910675,
+        "close_mae_kronos_median": 1669.9471027369282,
+        "close_mae_random_walk": 1509.1410457516342,
+        "close_mae_ratio_vs_rw": 1.0937567787698532,
+        "close_mape_kronos": 0.016691818574553575,
+        "close_mape_random_walk": 0.015154480563371885,
+        "direction_hits": 72,
+        "direction_n": 153,
+        "direction_accuracy": 0.47058823529411764,
+        "direction_independent_n": 153,
+        "direction_accuracy_independent": 0.47058823529411764,
+        "direction_p_value_vs_coinflip": 0.5179210307990523,
+        "direction_accuracy_open_to_close_signal": 0.43790849673202614,
+        "direction_p_value_open_to_close_signal": 0.14536554974727312,
+        "tokenizer_open_bias_mean_pct": 0.10866331007286663,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.09537678682087943,
+        "actual_up_fraction": 0.49019607843137253,
+        "predicted_up_fraction": 0.5490196078431373,
+        "brier_kronos_p_up": 0.3096659404502542,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": 0.03715703724207392,
+        "ret_corr_spearman": 0.030872636135794027,
+        "ret_corr_pearson_median_forecast": 0.06372191506833379,
+        "mean_pred_return": 0.0011890601635264047,
+        "mean_actual_return": -0.0018688269101180149,
+        "range_mae_kronos": 1521.2446149918296,
+        "range_mae_trailing20": 1363.4051372549022,
+        "range_corr_kronos": 0.13915351749267763,
+        "range_corr_trailing20": 0.20996373331839102,
+        "crps_kronos": 1237.4867007268424,
+        "crps_random_walk_gauss": 1116.9496999564365,
+        "coverage80_kronos": 0.5686274509803921,
+        "coverage90_kronos": 0.6601307189542484,
+        "width80_kronos_pct": 0.02965726945143774,
+        "coverage80_random_walk": 0.8431372549019608,
+        "width80_random_walk_pct": 0.04974171251069332,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": -0.27329592823891746,
+            "max_drawdown": -0.3683458028627641,
+            "sharpe_ann": -1.7616259220356743
+          },
+          "kronos_long_flat": {
+            "total_return": -0.16676853648037382,
+            "max_drawdown": -0.204296018567386,
+            "sharpe_ann": -1.3050767844363471
+          },
+          "kronos_long_short": {
+            "total_return": -0.06966132152877735,
+            "max_drawdown": -0.22915085449098727,
+            "sharpe_ann": -0.24353152034312425
+          },
+          "trades_long_flat": 56
+        }
+      }
+    }
+  },
+  "small_all_lb90": {
+    "model": "small_all_lb90",
+    "meta": "model=small lookback=90 pred_len=1 samples=30 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 580,
+    "n_samples": 30,
+    "horizons": {
+      "h1": {
+        "n": 580,
+        "close_mae_kronos_mean": 1679.0770356950432,
+        "close_mae_kronos_median": 1694.3677906788796,
+        "close_mae_random_walk": 1493.2031379310347,
+        "close_mae_ratio_vs_rw": 1.1244799806820345,
+        "close_mape_kronos": 0.018842928154344966,
+        "close_mape_random_walk": 0.016803112888042388,
+        "direction_hits": 288,
+        "direction_n": 580,
+        "direction_accuracy": 0.496551724137931,
+        "direction_independent_n": 580,
+        "direction_accuracy_independent": 0.496551724137931,
+        "direction_p_value_vs_coinflip": 0.9008793742874884,
+        "direction_accuracy_open_to_close_signal": 0.5,
+        "direction_p_value_open_to_close_signal": 1.0,
+        "tokenizer_open_bias_mean_pct": -0.13860135014442232,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.04683207128929191,
+        "actual_up_fraction": 0.506896551724138,
+        "predicted_up_fraction": 0.5172413793103449,
+        "brier_kronos_p_up": 0.29592337164750965,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": 0.05082592062181481,
+        "ret_corr_spearman": 0.06331846695595778,
+        "ret_corr_pearson_median_forecast": 0.039447100828667106,
+        "mean_pred_return": 0.0003521493982074108,
+        "mean_actual_return": 0.0006675551362537808,
+        "range_mae_kronos": 1399.3650037715518,
+        "range_mae_trailing20": 1343.6438344827588,
+        "range_corr_kronos": 0.31996525257859637,
+        "range_corr_trailing20": 0.22440030970078256,
+        "crps_kronos": 1257.7824933945205,
+        "crps_random_walk_gauss": 1120.9638820224686,
+        "coverage80_kronos": 0.5758620689655173,
+        "coverage90_kronos": 0.6637931034482759,
+        "width80_kronos_pct": 0.03546133279712852,
+        "coverage80_random_walk": 0.8155172413793104,
+        "width80_random_walk_pct": 0.05763419290170607,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": 0.25314625294345583,
+            "max_drawdown": -0.3683458028627644,
+            "sharpe_ann": 0.5393157623479847
+          },
+          "kronos_long_flat": {
+            "total_return": 0.09219117882194339,
+            "max_drawdown": -0.2501492547340598,
+            "sharpe_ann": 0.33174272442540054
+          },
+          "kronos_long_short": {
+            "total_return": -0.18113223664757927,
+            "max_drawdown": -0.4399520190088059,
+            "sharpe_ann": -0.05448255601497151
+          },
+          "trades_long_flat": 162
+        }
+      }
+    }
+  },
+  "small_7d_lb40": {
+    "model": "small_7d_lb40",
+    "meta": "model=small lookback=40 pred_len=7 samples=20 T=1.0 top_p=0.9 seed=0",
+    "n_origins": 153,
+    "n_samples": 20,
+    "horizons": {
+      "h1": {
+        "n": 153,
+        "close_mae_kronos_mean": 1609.8070986519608,
+        "close_mae_kronos_median": 1599.5714328022875,
+        "close_mae_random_walk": 1509.1410457516342,
+        "close_mae_ratio_vs_rw": 1.0667042044769177,
+        "close_mape_kronos": 0.0161207527108679,
+        "close_mape_random_walk": 0.015154480563371885,
+        "direction_hits": 76,
+        "direction_n": 153,
+        "direction_accuracy": 0.49673202614379086,
+        "direction_independent_n": 153,
+        "direction_accuracy_independent": 0.49673202614379086,
+        "direction_p_value_vs_coinflip": 1.0,
+        "direction_accuracy_open_to_close_signal": 0.42483660130718953,
+        "direction_p_value_open_to_close_signal": 0.07496157752820978,
+        "tokenizer_open_bias_mean_pct": -0.11520204731210829,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.09083102653889345,
+        "actual_up_fraction": 0.49019607843137253,
+        "predicted_up_fraction": 0.35294117647058826,
+        "brier_kronos_p_up": 0.29387254901960785,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": -0.021575607697588137,
+        "ret_corr_spearman": -0.045561765376006855,
+        "ret_corr_pearson_median_forecast": 0.0006888307541254866,
+        "mean_pred_return": -0.0017641947444219438,
+        "mean_actual_return": -0.0018688269101180149,
+        "range_mae_kronos": 1377.4272017973856,
+        "range_mae_trailing20": 1363.4051372549022,
+        "range_corr_kronos": 0.21386977248597752,
+        "range_corr_trailing20": 0.20996373331839102,
+        "crps_kronos": 1207.3762278229276,
+        "crps_random_walk_gauss": 1116.9496999564365,
+        "coverage80_kronos": 0.5359477124183006,
+        "coverage90_kronos": 0.6209150326797386,
+        "width80_kronos_pct": 0.027295325280255665,
+        "coverage80_random_walk": 0.8431372549019608,
+        "width80_random_walk_pct": 0.04974171251069332,
+        "strategy": {
+          "buy_and_hold": {
+            "total_return": -0.27329592823891746,
+            "max_drawdown": -0.3683458028627641,
+            "sharpe_ann": -1.7616259220356743
+          },
+          "kronos_long_flat": {
+            "total_return": -0.1772042724027889,
+            "max_drawdown": -0.20698147000639822,
+            "sharpe_ann": -1.7340653406804232
+          },
+          "kronos_long_short": {
+            "total_return": -0.10262651435565584,
+            "max_drawdown": -0.21392115627264852,
+            "sharpe_ann": -0.46835152110183864
+          },
+          "trades_long_flat": 68
+        }
+      },
+      "h7": {
+        "n": 147,
+        "close_mae_kronos_mean": 4216.169593431122,
+        "close_mae_kronos_median": 4190.225319940476,
+        "close_mae_random_walk": 4541.262108843537,
+        "close_mae_ratio_vs_rw": 0.928413619909906,
+        "close_mape_kronos": 0.042132993142833274,
+        "close_mape_random_walk": 0.0453001588488673,
+        "direction_hits": 90,
+        "direction_n": 147,
+        "direction_accuracy": 0.6122448979591837,
+        "direction_independent_n": 21,
+        "direction_accuracy_independent": 0.47619047619047616,
+        "direction_p_value_vs_coinflip": 1.0,
+        "direction_accuracy_open_to_close_signal": 0.5918367346938775,
+        "direction_p_value_open_to_close_signal": 1.0,
+        "tokenizer_open_bias_mean_pct": -0.10123977032329069,
+        "tokenizer_open_bias_corr_with_actual_ret": 0.11552388840968895,
+        "actual_up_fraction": 0.4489795918367347,
+        "predicted_up_fraction": 0.5510204081632653,
+        "brier_kronos_p_up": 0.2710544217687075,
+        "brier_coinflip": 0.25,
+        "ret_corr_pearson": 0.14995977369619387,
+        "ret_corr_spearman": 0.051948051948051945,
+        "ret_corr_pearson_median_forecast": 0.12807567867331607,
+        "mean_pred_return": 0.0012932994582083581,
+        "mean_actual_return": -0.0104312803619247,
+        "range_mae_kronos": 3121.0750473001704,
+        "range_mae_trailing20": 3338.090218864682,
+        "range_corr_kronos": 0.23348170068782803,
+        "range_corr_trailing20": 0.12435086685838255,
+        "crps_kronos": 3320.142320443967,
+        "crps_random_walk_gauss": 3288.061972741625,
+        "coverage80_kronos": 0.4421768707482993,
+        "coverage90_kronos": 0.5034013605442177,
+        "width80_kronos_pct": 0.058405500460701316,
+        "coverage80_random_walk": 0.7142857142857143,
+        "width80_random_walk_pct": 0.13201264123426526
+      }
+    }
+  }
+}
