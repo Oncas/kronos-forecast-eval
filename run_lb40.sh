@@ -4,7 +4,7 @@
 # the forecasts mostly "revert to the window mean".
 set -euo pipefail
 cd "$(dirname "$0")"
-PY=../../.venv/bin/python
+PY=${PYTHON:-python}
 EXT="--start 2024-07-01 --end 2025-08-31"
 run() { echo "=== $* ==="; $PY run_forecasts.py "$@" 2>&1 | grep --line-buffered -E "origins|saved|Error|error"; }
 for m in small mini base; do

@@ -12,6 +12,7 @@ Output: forecasts_<model>.npz with
     last_close float  [n_origins]  close of the day before the target
 """
 import argparse
+import os
 import sys
 import time
 from pathlib import Path
@@ -20,8 +21,9 @@ import numpy as np
 import pandas as pd
 import torch
 
-REPO = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO))
+# Path to a checkout of https://github.com/shiyu-coder/Kronos (for its `model` package).
+KRONOS = Path(os.environ.get("KRONOS_PATH", Path(__file__).resolve().parent / "Kronos"))
+sys.path.insert(0, str(KRONOS))
 from model import Kronos, KronosPredictor, KronosTokenizer  # noqa: E402
 
 MODELS = {

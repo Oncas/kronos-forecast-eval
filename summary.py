@@ -3,8 +3,10 @@ import json
 from pathlib import Path
 
 r = json.loads((Path(__file__).with_name("results.json")).read_text())
+# Direction accuracy, its p-value and the correlation use only non-overlapping
+# windows (every h-th origin), so for h>1 they are computed on far fewer days.
 cols = [("n", "n", "{:d}"), ("MAE/RW", "close_mae_ratio_vs_rw", "{:.2f}"),
-        ("dir acc", "direction_accuracy", "{:.1%}"), ("p", "direction_p_value_vs_coinflip", "{:.2f}"),
+        ("dir n", "direction_independent_n", "{:d}"), ("dir acc", "direction_accuracy_independent", "{:.1%}"), ("p", "direction_p_value_vs_coinflip", "{:.2f}"),
         ("corr", "ret_corr_pearson", "{:+.3f}"), ("pred up", "predicted_up_fraction", "{:.0%}"),
         ("act up", "actual_up_fraction", "{:.0%}"), ("cov80", "coverage80_kronos", "{:.0%}"),
         ("CRPS/RW", None, "{:.2f}"), ("rangeMAE/base", None, "{:.2f}"),
