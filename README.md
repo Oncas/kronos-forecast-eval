@@ -74,6 +74,20 @@ Per-run plots are in `eval_*.png`, per-day rows in `daily_*.csv`, and every metr
 - **Possible training overlap.** The 2024-07 to 2025-08 window may overlap Kronos's pretraining data. Kronos does worse there, so this doesn't change the conclusion.
 - **Single seed.** All runs use seed 0 with 30 samples per forecast.
 
+## Related reports
+
+Other evaluations in the Kronos issue tracker reach the same conclusion on different data:
+
+- [#387](https://github.com/shiyu-coder/Kronos/issues/387): walk-forward backtests on 5m, 15m and 1h crypto futures. Worse than a random walk, with forecast cones too narrow.
+- [#282](https://github.com/shiyu-coder/Kronos/issues/282): Kronos-small on 30 years of daily data for 20 major assets. Negative.
+- [#323](https://github.com/shiyu-coder/Kronos/issues/323): a reproducible direction benchmark of Kronos-base.
+- [#355](https://github.com/shiyu-coder/Kronos/issues/355): Kronos-mini on 30-minute US equities.
+- [#375](https://github.com/shiyu-coder/Kronos/issues/375): cross-sectional ranking on 182 US equities. IC +0.022 (t=1.39), which doesn't survive trading costs.
+
+This repo adds daily BTC, all three public model sizes and a lookback sweep, and scores the full sample distribution with CRPS and interval coverage, not just the mean forecast.
+
+The sample-averaging workaround in `run_forecasts.py` won't be needed once [#395](https://github.com/shiyu-coder/Kronos/pull/395) or [#321](https://github.com/shiyu-coder/Kronos/pull/321) is merged; both expose the individual sample paths.
+
 ## Reproducing
 
 ```bash
