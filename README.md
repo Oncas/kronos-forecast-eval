@@ -15,7 +15,7 @@ coin flip, and its prediction intervals are far too narrow.
 - **Test windows:** 2025-09-01 to 2026-01-31 (153 days) and 2024-07-01 to 2025-08-31 (427 days), 580 days in total.
 - **Walk-forward:** for each target day the context is the `lookback` closed candles strictly before it, so nothing from the future leaks in.
 - **Models:** Kronos-mini, -small and -base, with lookbacks of 40 (the paper's daily setting), 90 and 400 bars.
-- **Sampling:** 30 sample paths per forecast (T=1.0, top-p 0.9 unless noted). `KronosPredictor` averages samples internally, so each series is repeated in the batch with `sample_count=1` to keep the full distribution.
+- **Sampling:** 30 sample paths per forecast (20 for the 7-day run; T=1.0, top-p 0.9 unless noted). `KronosPredictor` averages samples internally, so each series is repeated in the batch with `sample_count=1` to keep the full distribution.
 - **Baselines:**
   - Random walk (tomorrow = today) for point error.
   - Gaussian with trailing 30-day volatility for CRPS and intervals.
@@ -72,7 +72,7 @@ Per-run plots are in `eval_*.png`, per-day rows in `daily_*.csv`, and every metr
 
 - **Only one asset at daily frequency.** These results say nothing about Kronos on intraday data or other markets.
 - **Possible training overlap.** The 2024-07 to 2025-08 window may overlap Kronos's pretraining data. Kronos does worse there, so this doesn't change the conclusion.
-- **Single seed.** All runs use seed 0 with 30 samples per forecast.
+- **Single seed.** All runs use seed 0 with 30 samples per forecast (20 for the 7-day run).
 
 ## Related reports
 
